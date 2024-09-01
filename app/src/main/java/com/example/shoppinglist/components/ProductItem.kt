@@ -30,10 +30,10 @@ fun ProductItem(product: Product, onSave: () -> Unit) {
 
     fun getIcon(isCompleted: Boolean): ImageVector {
         if (isCompleted) {
-            return Icons.Filled.ShoppingCart
+            return Icons.Sharp.Done
         }
 
-        return Icons.Sharp.Done
+        return Icons.Filled.ShoppingCart
     }
 
     fun onToggleStatus(isCompleted: Boolean) {

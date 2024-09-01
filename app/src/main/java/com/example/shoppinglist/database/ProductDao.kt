@@ -8,7 +8,7 @@ import androidx.room.Update
 
 @Dao
 interface ProductDao {
-    @Query("SELECT * FROM products ORDER BY isCompleted DESC")
+    @Query("SELECT * FROM products ORDER BY isCompleted ASC")
     fun getAll(): List<Product>
 
     @Update
